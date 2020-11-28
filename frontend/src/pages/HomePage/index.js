@@ -4,7 +4,7 @@ import React from 'react';
 import Header from '../../components/Header';
 //desestruturar o bootstrap
 import { Container, InputGroup, FormControl, Button, Alert, Spinner}  from 'react-bootstrap';
-import { ContentContainer, Form} from './styles';
+import { ContentContainer, Form, AdsBlock} from './styles';
 import ShortenerService from '../../services/shortenerService';
 
 class HomePage extends React.Component {
@@ -67,7 +67,7 @@ class HomePage extends React.Component {
                <Header> Seu novo encurtador de URL. :)</Header> 
                <ContentContainer>
                    <Form onSubmit={this.handleSubmit}>
-                        <InputGroup>
+                        <InputGroup className="mb-3"> 
                             <FormControl 
                                 placeholder="Digite a url para encrtar"
                                 defaultValue=""
@@ -86,7 +86,7 @@ class HomePage extends React.Component {
                            // retornar um fragmente(<></>). fragment retorna um conjunto de itens
                            code && (
                                <>
-                                <InputGroup>
+                                <InputGroup className="mb-3">
                                     <FormControl 
                                         autoFocus={true}
                                         defaultValue={`https://pitu.tk/${code}`}
@@ -107,6 +107,9 @@ class HomePage extends React.Component {
                        {errorMessage && <Alert variant="danger">{errorMessage}</Alert>}
                        
                    </Form>
+               </ContentContainer>
+               <ContentContainer>
+                   <AdsBlock>Adense </AdsBlock>
                </ContentContainer>
             </Container>
             

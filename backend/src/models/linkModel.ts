@@ -34,7 +34,7 @@ const LinkModel= database.define<ILinkModel>('link',{
         type: Sequelize.INTEGER.UNSIGNED,
         allowNull: false,
         defaultValue: 0
-    }
+    },
 })
 
 export default LinkModel; 

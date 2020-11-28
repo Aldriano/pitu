@@ -2,7 +2,7 @@ import React from 'react';
 // {} desistruturar
 import {Logo, HeaderContainer} from './styles';
 
-import Icone from '../../assets/icon.png';
+import Icone from '../../assets/logo-pitu.jpg';
 
 function Header(props){
     return (

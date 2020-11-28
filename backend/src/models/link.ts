@@ -7,5 +7,6 @@ export type Link = {  //definir a estrutura/atributos/parâmetros no Link
     id?: number,
     url: string,  //URL longa, a normal
     code?: string, //URL encurtada
-    hits?: number  //quantidade de vezes de foram clicados
+    hits?: number,  //quantidade de vezes de foram clicados
+    updateAt?: Date  //fiz por conta ????
 }
